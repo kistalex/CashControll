@@ -20,6 +20,11 @@
 		46C5646329F5B30E008C1E1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5646229F5B30E008C1E1E /* HomeViewController.swift */; };
 		46C5646529F5B817008C1E1E /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5646429F5B817008C1E1E /* RoundedCornerTextField.swift */; };
 		46C564672A0022D9008C1E1E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C564662A0022D9008C1E1E /* String.swift */; };
+		46DDA4372A2A0DEF00066220 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DDA4362A2A0DEF00066220 /* CustomLabel.swift */; };
+		46DDA4392A2A0E6A00066220 /* SalaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DDA4382A2A0E6A00066220 /* SalaryView.swift */; };
+		46DDA43B2A2A5C7300066220 /* SpendingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DDA43A2A2A5C7300066220 /* SpendingsView.swift */; };
+		46DDA43D2A30FE8900066220 /* MonthlyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DDA43C2A30FE8900066220 /* MonthlyInfoView.swift */; };
+		46DDA43F2A30FEA700066220 /* DailyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DDA43E2A30FEA700066220 /* DailyInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		46C5646229F5B30E008C1E1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		46C5646429F5B817008C1E1E /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		46C564662A0022D9008C1E1E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		46DDA4362A2A0DEF00066220 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		46DDA4382A2A0E6A00066220 /* SalaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryView.swift; sourceTree = "<group>"; };
+		46DDA43A2A2A5C7300066220 /* SpendingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsView.swift; sourceTree = "<group>"; };
+		46DDA43C2A30FE8900066220 /* MonthlyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyInfoView.swift; sourceTree = "<group>"; };
+		46DDA43E2A30FEA700066220 /* DailyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +78,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		468423652A2782DB0099B481 /* View */ = {
+		468423652A2782DB0099B481 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				46C61E8A2A3F5D4200ACCDAE /* Storyboards */,
+				46C5646429F5B817008C1E1E /* RoundedCornerTextField.swift */,
+				46DDA4362A2A0DEF00066220 /* CustomLabel.swift */,
+				46DDA4382A2A0E6A00066220 /* SalaryView.swift */,
+				46DDA43A2A2A5C7300066220 /* SpendingsView.swift */,
 				46C5645229F59FE3008C1E1E /* InputInfoViewController.swift */,
 				46C5646229F5B30E008C1E1E /* HomeViewController.swift */,
+				46DDA43E2A30FEA700066220 /* DailyInfoView.swift */,
+				46DDA43C2A30FE8900066220 /* MonthlyInfoView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		46C5644229F59FE3008C1E1E = {
@@ -98,13 +115,11 @@
 			children = (
 				46C5645029F59FE3008C1E1E /* SceneDelegate.swift */,
 				46C5644E29F59FE3008C1E1E /* AppDelegate.swift */,
-				468423652A2782DB0099B481 /* View */,
+				468423652A2782DB0099B481 /* Views */,
 				468423622A2778390099B481 /* ViewModel */,
 				468423612A27782A0099B481 /* Model */,
 				46C564682A0022EB008C1E1E /* Extensions */,
-				46C5645429F59FE3008C1E1E /* Main.storyboard */,
 				46C5645729F59FE4008C1E1E /* Assets.xcassets */,
-				46C5645929F59FE4008C1E1E /* LaunchScreen.storyboard */,
 				46C5645C29F59FE4008C1E1E /* Info.plist */,
 			);
 			path = CashControll;
@@ -113,11 +128,19 @@
 		46C564682A0022EB008C1E1E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				46C5646429F5B817008C1E1E /* RoundedCornerTextField.swift */,
 				4684235D2A2763580099B481 /* UIConstants.swift */,
 				46C564662A0022D9008C1E1E /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46C61E8A2A3F5D4200ACCDAE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46C5645929F59FE4008C1E1E /* LaunchScreen.storyboard */,
+				46C5645429F59FE3008C1E1E /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +216,18 @@
 			files = (
 				46C564672A0022D9008C1E1E /* String.swift in Sources */,
 				46C5645329F59FE3008C1E1E /* InputInfoViewController.swift in Sources */,
+				46DDA4372A2A0DEF00066220 /* CustomLabel.swift in Sources */,
 				468423602A2777D80099B481 /* UserData.swift in Sources */,
 				468423682A2785720099B481 /* HomeViewModel.swift in Sources */,
 				46C5644F29F59FE3008C1E1E /* AppDelegate.swift in Sources */,
+				46DDA4392A2A0E6A00066220 /* SalaryView.swift in Sources */,
 				468423642A27784D0099B481 /* InputInfoViewModel.swift in Sources */,
 				46C5645129F59FE3008C1E1E /* SceneDelegate.swift in Sources */,
 				46C5646529F5B817008C1E1E /* RoundedCornerTextField.swift in Sources */,
+				46DDA43B2A2A5C7300066220 /* SpendingsView.swift in Sources */,
 				46C5646329F5B30E008C1E1E /* HomeViewController.swift in Sources */,
+				46DDA43F2A30FEA700066220 /* DailyInfoView.swift in Sources */,
+				46DDA43D2A30FE8900066220 /* MonthlyInfoView.swift in Sources */,
 				4684235E2A2763580099B481 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
